@@ -1,11 +1,34 @@
 // https://tailwindcomponents.com/component/tailwind-css-admin-dashboard-layout
 // https://gist.github.com/Klerith/3949f1c8b884d7101e378dfb668f0f3a
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 
 const links = [
   { name: "accordion", href: "accordion" },
+  { name: "alert dialog", href: "alert-dialog" },
   { name: "alert", href: "alert" },
+  { name: "avatar", href: "avatar" },
+  { name: "badge", href: "badge" },
+  { name: "button", href: "button" },
+  { name: "calendar", href: "calendar" },
+  { name: "card", href: "card" },
+  { name: "carousel", href: "carousel" },
+  { name: "checkbox", href: "checkbox" },
+  { name: "combobox", href: "combobox" },
+  { name: "command", href: "command" },
+  { name: "context menu", href: "context-menu" },
+  { name: "dialog", href: "dialog" },
+  { name: "input OTP", href: "input-otp" },
+  { name: "menu bar", href: "menu-bar" },
+  { name: "progress", href: "progress" },
+  { name: "sheet", href: "sheet" },
+  { name: "skeleton", href: "skeleton" },
+  { name: "slider", href: "slider" },
+  { name: "sonner", href: "sonner" },
+  { name: "tabs", href: "tabs" },
+  { name: "toast", href: "toast" },
+  { name: "datatable", href: "datatable" },
 ];
 
 export default function DashboardLayout({
@@ -94,9 +117,13 @@ export default function DashboardLayout({
             </div>
             <div className="flex items-center">
               {/* User Avatar */}
-              <div className="bg-blue-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center">
-                FH
-              </div>
+              <Avatar>
+                <AvatarImage
+                  src="https://github.com/matiasagbenitez.png"
+                  alt="@shadcn"
+                />
+                <AvatarFallback>MB</AvatarFallback>
+              </Avatar>
             </div>
           </div>
         </div>

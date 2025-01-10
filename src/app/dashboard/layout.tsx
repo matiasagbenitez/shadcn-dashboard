@@ -18,7 +18,9 @@ const links = [
   { name: "combobox", href: "combobox" },
   { name: "command", href: "command" },
   { name: "context menu", href: "context-menu" },
+  { name: "datatable", href: "datatable" },
   { name: "dialog", href: "dialog" },
+  { name: "form", href: "form" },
   { name: "input OTP", href: "input-otp" },
   { name: "menu bar", href: "menu-bar" },
   { name: "progress", href: "progress" },
@@ -28,7 +30,6 @@ const links = [
   { name: "sonner", href: "sonner" },
   { name: "tabs", href: "tabs" },
   { name: "toast", href: "toast" },
-  { name: "datatable", href: "datatable" },
 ];
 
 export default function DashboardLayout({
